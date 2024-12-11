@@ -12,7 +12,8 @@ services:
       - django_app
     networks:
       - notes-app-nw
-     django_app:
+
+  django_app:
     build:
       context: .
     image: django_app
@@ -54,6 +55,3 @@ services:
 networks:
   notes-app-nw:
     driver: bridge
-
-
- 
